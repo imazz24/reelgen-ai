@@ -212,6 +212,7 @@ function AdVideoPlayer({
 
   useEffect(() => {
     startRef.current = Date.now();
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setProgress(0);
     const id = setInterval(() => {
       const elapsed = (Date.now() - startRef.current) / SCENE_MS;
