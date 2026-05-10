@@ -194,7 +194,7 @@ function AdVideoPlayer({
   const [scene, setScene] = useState(0);
   const [progress, setProgress] = useState(0);
   const [tick, setTick] = useState(0); // forces full restart on each loop
-  const startRef = useRef<number>(Date.now());
+  const startRef = useRef<number>(0);
 
   useEffect(() => {
     const id = setInterval(() => {
